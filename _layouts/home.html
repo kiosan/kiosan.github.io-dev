@@ -9,27 +9,30 @@ title: Sasha Bondar
   {% endif %}
 
   {{ content }}
-
-  {% if site.posts.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {% if site.show_excerpts %}
-          {{ post.excerpt }}
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {% endif %}
+  <div class="home-container">
+    <div class="home-photo item">
+      <img src="{{ '/assets/sasha-bondar.png' | relative_url }}" alt='Sasha Bondar - Ruby On Rails consulting' width="250"/>
+    </div>
+    <div class="home-what item">
+      <h2>Who I am</h2>
+      <p>
+      Founder at <a href="https://vertalab.com">Vertalab</a>, <a href="http://rubyforce.io">RubyForce</a>. CTO at <a href="https://strivemax.com">StriveMax</a> and <a href="https://studlava.com">Studlava</a>. Ruby developer, mentor and speaker.
+      </p>
+      <h2>That's what I do</h2>
+      <p>
+      <ul>
+        <li>
+          <a href="{{ '/ruby-on-rails-consulting' | relative_url }}">Ruby on Rails consulting</a>
+        </li>
+        <li>
+          Business digital transformation consulting
+        </li>
+        <li>
+          Public speaking
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
 
 </div>
