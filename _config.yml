@@ -13,15 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Sasha Bondar
-email: sasha@bondar.consulting
+title: Reintech - робота за рейтами аутсорс компаній
+email: sasha@reintech.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Engineer, entrepreneur and software consultant. I help clients to build software that works.
+  Reintech - платформа для пошуку віддаленої роботи за рейтами аутсорс компаній. Довгі проекти, повна зайнятість.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kiosan
-github_username:  kiosan
 instagram_username:  kiosan1
 
 # Build settings
