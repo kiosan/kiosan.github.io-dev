@@ -21,7 +21,8 @@
         {% endif %}
 
 
-      <h3>Чому варто створити профіль на платформі Reintech </h3>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
       <iframe width="270" height="120" src="https://www.youtube.com/embed/BZInTy5sN7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>&nbsp;</p>
       <p>Щоб стати частинкою великих змін, почни з створення профілю — <a href='https://reintech.io/developer/apply' target="_blank">https://reintech.io/developer/apply</a></p>
@@ -30,11 +31,10 @@
       Телеграм канал: <a href='https://t.me/reintech' target="_blank">t.me/reintech</a><br/>
       Інстаграм: <a href="https://instagram.com/kiosan1" target="_blank">kiosan1</a><br/>
 
-      <a href="https://soundcloud.com/sashabondar" target="_blank">Подкаст</a> про софт скіли для програмістів.
+      SounCloud: <a href="https://soundcloud.com/sashabondar" target="_blank">soundcloud.com/sashabondar</a>
       <br/>
-      <a href='https://medium.com/oleksandr-bondar' target="_blank">Блог інженера</a>
+      Medium: <a href='https://medium.com/oleksandr-bondar' target="_blank">Блог інженера</a>
       </p>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
