@@ -26,7 +26,7 @@
         <iframe width="270" height="152" src="https://www.youtube.com/embed/S2UnZt-enGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <p>&nbsp;</p>
-      <p>Щоб стати частинкою великих змін, почни з створення профілю — <a href='https://reintech.io/developer/apply' target="_blank">https://reintech.io/developer/apply</a></p>
+      <p>Щоб стати частинкою великих змін, почни з створення профілю — <a href='https://reintech.io/developer/apply' oniclick="gtag_report_conversion('https://reintech.io/developer/apply');" target="_blank">https://reintech.io/developer/apply</a></p>
       <p>
       <h3>Корисні посилання</h3>
       Email: sasha@reintech.io<br/>
@@ -87,6 +87,22 @@ gtag('config', 'UA-133545896-1');
     <noscript>
       <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=523225&fmt=gif" />
     </noscript>
+
+
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-763528208/03wxCMKb1JUBEJCIiuwC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
   </body>
 </html>
