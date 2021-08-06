@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kiosan
 instagram_username:  kiosan1
-
+permalink: /:title:output_ext
 # Build settings
 markdown: kramdown
 # theme: minima
